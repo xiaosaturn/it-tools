@@ -15,7 +15,7 @@ const { t } = useI18n();
 <template>
   <div class="pt-50px">
     <div class="grid-wrapper">
-      <div v-if="config.showBanner" class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4">
+      <!-- <div v-if="config.showBanner" class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4">
         <ColoredCard :title="$t('home.follow.title')" :icon="Heart">
           {{ $t('home.follow.p1') }}
           <a
@@ -34,7 +34,7 @@ const { t } = useI18n();
           {{ $t('home.follow.thankYou') }}
           <n-icon :component="Heart" />
         </ColoredCard>
-      </div>
+      </div> -->
 
       <transition name="height">
         <div v-if="toolStore.favoriteTools.length > 0">
